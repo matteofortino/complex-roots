@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JSX Graph -->
+    <script type="text/javascript" charset="UTF-8"
+        src="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraphcore.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/jsxgraph/distrib/jsxgraph.css" />
+
+    <title>complex roots visualization</title>
+</head>
+<body>
+    <h1 id="title">Visualizzazione grafica delle radici N-esime di un numero complesso</h1>
+
+    <div id="container">
+        <div id="real-container">
+            <input type="number" id="real-part" value="1">
+            <span>Parte reale</span>
+        </div>
+    
+        <div id="imaginary-container">
+            <input type="number" id="imaginary-part" value="0">
+            <span>Parte immaginaria</span>
+        </div>
+
+        <span id="show"></span>
+
+    </div>
+
+    <div id="jxgbox" class="jxgbox" style="width:500px; height:500px"></div>
+
+    <div id="slider-container">
+        <span>N: </span>
+        <input type="range" min="0" max="50" id="slider" value="0">
+        <span id="slider-counter"></span>
+    </div>
+</body>
+</html>
