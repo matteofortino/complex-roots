@@ -2,4 +2,4 @@
 
 Visualize complex numbers roots via JavaScript!
 
-![Complex numbers root](https://github.com/matteofortino/complex-root/blob/main/image.jpg?raw=true)
+![Complex numbers root](https://github.com/matteofortino/complex-roots/blob/main/image.png?raw=true)
