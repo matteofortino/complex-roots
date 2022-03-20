@@ -12,19 +12,21 @@ function main()
 {
     let a = realInput.value
     let b = imaginaryInput.value
-    
+
     let angle = Math.atan(b / a)
     let module = Math.sqrt(a**2 + b**2)
     const len = module + 1.5
-    
+
     const board = JXG.JSXGraph.initBoard('jxgbox', {
-        boundingbox: [-len, len, len, -len], axis: true
+        boundingbox: [-len, len, len, -len],
+        axis: true,
+        showCopyright: false,
     });
-    
+
     let n = slider.value
     counter.innerText = slider.value
     let k = n - 1
-    
+
     if(a != '' && b != '')
     {
         show.innerText = `Radice ${n} di ${a} + ${b}i :`
@@ -56,7 +58,7 @@ function main()
 
         board.create('arrow', [[0, 0] , [x, y]])
     }
-    
+
 }
 
 main()
