@@ -29,7 +29,7 @@ function main()
 
     if(a != '' && b != '')
     {
-        show.innerText = `Radice ${n} di ${a} + ${b}i :`
+        show.innerText = `Radici ${n} di ${a} + ${b}i :`
     }
 
     let x, y, alpha
